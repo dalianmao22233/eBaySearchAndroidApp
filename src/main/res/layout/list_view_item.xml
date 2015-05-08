@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Item 1 BEGIN-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <!-- Left IMG-->
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/result_img"
+                android:background="#FFFFFF"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+
+        <!-- Right Description-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/result_title"
+                android:textColor="#222222"
+                android:layout_margin="5dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/result_price"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Item 1 END-->
+
+</LinearLayout>
